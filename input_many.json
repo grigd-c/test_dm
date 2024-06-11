@@ -1,0 +1,4 @@
+{
+  "ScatterSingleCell.docker_image": "run_scanpy:v1",
+  "ScatterSingleCell.input_h5s": ["MantonBM1_HiSeq_1.h5", "MantonBM2_HiSeq_1.h5","MantonBM3_HiSeq_1.h5","MantonBM4_HiSeq_1.h5","MantonBM5_HiSeq_1.h5","MantonBM6_HiSeq_1.h5","MantonBM7_HiSeq_1.h5","MantonBM8_HiSeq_1.h5"]
+}
