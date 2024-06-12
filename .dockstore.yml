@@ -1,0 +1,9 @@
+    version: 0.01
+    workflows:
+        - subclass: WDL
+          primaryDescriptorPath: ""
+          testParameterFiles: ""
+          readMePath: ""
+          authors:
+              - name: "Dima"
+                email: "Dima@dima.org"
