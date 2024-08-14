@@ -1,9 +1,11 @@
-    version: 0.01
-    workflows:
-        - subclass: WDL
-          primaryDescriptorPath: ""
-          testParameterFiles: ""
-          readMePath: ""
-          authors:
-              - name: "Dima"
-                email: "Dima@dima.org"
+version: 1.2
+tools:
+  - name: dmiSingleCell
+    subclass: CWL
+    primaryDescriptorPath: /single_cell.wdl
+    testParameterFiles:
+        - /test/singleCell.wdl.json
+    authors:
+        - name: Dmitriy Grigoryev
+          email: mickeythemouse@abc.com
+    topic: Small single-cell analysis
