@@ -1,6 +1,6 @@
 #!/bin/bash
 
-for cmd in gsutil docker docker-compose python java; do
+for cmd in gsutil docker python java; do
   
   if hash "$cmd" 2>/dev/null; then
     :
@@ -16,7 +16,7 @@ if [ ! -f "$FILE" ]; then
     exit 1
 fi
 
-docker-compose build
+docker compose build
 
 gsutil -m cp -r gs://terra-featured-workspaces/Cumulus/cellranger_output .
 
