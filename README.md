@@ -15,3 +15,6 @@ This code makes sure that same-type files are "bunched up" in the same directory
 If this is not required, a simpler, previous version of single_cell.wdl can be used which does not have
 "GatherH5" task so output arrays at the end of the run represent files located in per-shard directories, 
 which may be acceptable for the next stages.
+
+#### Slurm: 
+sbatch --array=1-8 straight_scanpy.s
