@@ -1,6 +1,6 @@
 ## Simple workflow to do single cell sequencing
 
-version 1.0
+version development-1.1
 
 workflow ScatterSingleCell {
     input {
