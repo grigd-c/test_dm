@@ -1,7 +1,7 @@
 version: 1.2
 tools:
   - name: dmiSingleCell
-    subclass: WDL
+    subclass: CWL
     primaryDescriptorPath: /single_cell.wdl
     testParameterFiles:
         - /test/singleCell.wdl.json
