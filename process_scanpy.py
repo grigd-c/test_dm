@@ -60,12 +60,12 @@ def main():
     sc.tl.paga(adata)
     sc.pl.paga(adata, plot=False)  # remove `plot=False` if you want to see the coarse-grained graph
     sc.tl.umap(adata, init_pos='paga')
-    sc.pl.umap(adata, color=['leiden'], save=f"_{input_base}.png")
+    sc.pl.umap(adata, color=['leiden'], save=f"_{input_base}.png", show=False)
 
     # Find marker genes for each leiden cluster using Mann-Whitney-U test, and generate the gene rank plot.
     sc.settings.verbosity = 2
     sc.tl.rank_genes_groups(adata, 'leiden', method='wilcoxon')
-    sc.pl.rank_genes_groups(adata, n_genes=25, sharey=False, save=f"_{input_base}.png")
+    sc.pl.rank_genes_groups(adata, n_genes=25, sharey=False, save=f"_{input_base}.png", show=False)
     adata.write(path_output, compression='gzip')
     print("Done!")
 
